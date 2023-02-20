@@ -25,7 +25,7 @@ int give_pop(void)
 
 int calc_year(int p)
 {
-	int p_o = p; // Original population
+	int p_o = p;
 	int i = 0;
 	do
 	{
