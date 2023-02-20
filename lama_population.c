@@ -7,7 +7,7 @@ int main(void)
 {
     int p = give_pop();
 	int y = calc_year(p);
-	printf("The population will triple in %i years\n", y);
+	printf("The population will quadruple in %i years\n", y);
 }
 
 int give_pop(void)
@@ -32,7 +32,7 @@ int calc_year(int p)
 		p =  p + (p/3 - p/4); // Every year p/3 are born, p/4 die
 		i++;
 	}
-	while (p < 3*p_o);
+	while (p < 4*p_o);
 
 	return i;
 }
