@@ -29,7 +29,7 @@ int calc_year(int p)
 	int i = 0;
 	do
 	{
-		p =  p + (p/3 - p/4); // Every year p/3 are born, p/4 die
+		p =  p + (p/3 - p/4);
 		i++;
 	}
 	while (p < 2*p_o);
