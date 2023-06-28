@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct item
-{
+struct item {
     int price;
     char name[20];
 };
@@ -14,16 +13,14 @@ int cmpfunc (const void * a, const void * b) {
    return strcmp(((Item*)a)->name, ((Item*)b)->name);
 }
 
-int main(void)
-{
+int main(void) {
     int i;
     Item menu[5];
     Item order[5];
 
     printf("Enter 5 items");
 
-    for(i = 0; i < 5; i++)
-    {
+    for(i = 0; i < 5; i++) {
         printf("\nEnter price:");
         scanf("%d", &menu[i].price);
         printf("\nEnter name:");
@@ -34,8 +31,7 @@ int main(void)
 
     printf("\nItem Information List:");
 
-    for(i = 0; i < 5; i++)
-    {
+    for(i = 0; i < 5; i++) {
         printf("\nprice:%d, Name:%s", menu[i].price, menu[i].name);
     }
 
@@ -44,21 +40,17 @@ int main(void)
     i = 0;
     int sum = 0;
 
-    while(strcmp(order[i].name, "") != 0)
-    {
+    while(strcmp(order[i].name, "") != 0) {
         scanf("%[^\n]", order[i].name);
         printf("\ninput: ");
         int y = 0;
-        while(order[i].name[y])
-         {
+        while(order[i].name[y]) {
             printf("%d ", order[i].name[y]);
             y++;
-         }
+        }
         printf("\nChoose from menu: ");
-        for(int j = 0; j < 5; j++)
-        {
-            if(strcmp(order[i].name, menu[j].name) == 0)
-            {
+        for(int j = 0; j < 5; j++) {
+            if(strcmp(order[i].name, menu[j].name) == 0) {
                 sum = sum + menu[j].price;
             }
         }
