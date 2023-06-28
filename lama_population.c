@@ -5,21 +5,21 @@ int give_pop(void);
 
 int main(void)
 {
-    int p = give_pop();
+	int p = give_pop();
 	int y = calc_year(p);
 	printf("The population will quadruple in %i years\n", y);
 }
 
 int give_pop(void)
 {
-    int p;
-    do
+	int p;
+	do
 	{
 		printf("Give population (bigger or equal to 9): ");  
-	    scanf("%d", &p);
+		scanf("%d", &p);
 	}
-    while (p < 9);
-    
+	while (p < 9);
+	
 	return p;
 }
 
