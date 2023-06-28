@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//tgeadhdtndf hthrhsdyj
+
 int calc_year(int p);
 int give_pop(void);
 
